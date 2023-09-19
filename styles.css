@@ -1,33 +1,38 @@
 @font-face {
-    font-family: 'Haskoy';
-    src: url(./fonts/Haskoy-Regular.woff2) format('woff2');
+    font-family: 'Aspekta';
+    src: url(./fonts/Aspekta-400.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aspekta';
+    src: url(./fonts/Aspekta-800.woff2) format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Paysage';
+    src: url(./fonts/Paysage-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Haskoy';
-    src: url(./fonts/Haskoy-Bold.woff2) format('woff2');
+    font-family: 'Paysage';
+    src: url(./fonts/Paysage-Bold.woff) format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Giphurs';
-    src: url(./fonts/Giphurs-Regular.woff2) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Giphurs';
-    src: url(./fonts/Giphurs-Bold.woff2) format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
+/* * {
+    font-family: 'Paysage', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
 
 * {
-    font-family: 'Haskoy', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Aspekta', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.02rem;
 }
 
 body {
@@ -36,35 +41,59 @@ body {
 
 h1, h2, h3 {
     font-size: calc(2rem + 1vw);
-    font-weight: bold;
+    font-weight: 800;
 }
 
-p, legend, label, input, button {
-    font-size: calc(1rem + 0.5vw);
+p, a, legend, label, input, button {
+    font-size: calc(1.2rem);
+    line-height: 1.6rem;
 }
 
 a {
     text-decoration: none;
-    color: rgb(224, 92, 3);
+    color: rgb(36, 95, 255);
 }
 
-/* fieldset {
-    border: none;
-    background: yellow;
-    margin: 0;
-} */
+a:hover {
+    text-decoration: underline;
+}
 
 button {
-    background: rgb(224, 92, 3);
+    background: rgb(36, 95, 255);
     color: rgb(255, 255, 255);
-    padding: 1.1rem 1.5rem;
+    padding: 1rem 1.5rem;
     border: none;
-    border-radius: 10px;
-    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.15));
 }
 
 button:hover {
+    background: rgb(70, 119, 255);
     cursor: pointer;
+}
+
+form {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 40px 0;
+}
+
+legend {
+    font-weight: 800;
+    margin: 0.5rem 0 1rem 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+label, input {
+    margin: 0.25rem;
+}
+
+input {
+    border: 1px solid rgb(215, 215, 215);
+    padding: 0.25rem;
 }
 
 #page {
@@ -73,20 +102,13 @@ button:hover {
 }
 
 #hero {
-    background: url('https://images.unsplash.com/photo-1542361164-6c814a69fdc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80');
+    background: url('https://images.unsplash.com/photo-1553570739-330b8db8a925?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 30vh;
+    height: 25vh;
 }
 
 .content {
     margin: 20px;
-}
-
-#form {
-    background: rgb(255, 255, 255);
-    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.15));
-    padding: 20px;
-    margin: 20px 0;
 }

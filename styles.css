@@ -12,24 +12,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Paysage';
-    src: url(./fonts/Paysage-Regular.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Paysage';
-    src: url(./fonts/Paysage-Bold.woff) format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* * {
-    font-family: 'Paysage', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} */
-
 * {
     font-family: 'Aspekta', Helvetica, Arial, sans-serif;
     letter-spacing: 0.02rem;
@@ -84,21 +66,25 @@ legend {
 fieldset {
     border: none;
     margin: 0;
-    padding: 1rem 0;
+    padding: 1rem;
+    display: inline;
 }
 
 label, input {
     margin: 0.25rem;
+    display: block;
 }
 
 input {
-    border: 1px solid rgb(215, 215, 215);
+    border: 1px solid rgb(200, 200, 200);
+    background: rgb(250, 250, 250);
     padding: 0.25rem;
 }
 
 #page {
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 #hero {

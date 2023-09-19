@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://falsumit.github.io/normalize.css/normalize.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Odin: Sign-up Form</title>
@@ -31,7 +28,9 @@
             <fieldset>
                 <label for="first-name">*First Name</label>
                 <input type="text" name="first-name" id="first-name" required>
+            </fieldset>
 
+            <fieldset>
                 <label for="last-name">Last Name</label>
                 <input type="text" name="last-name" id="last-name">
             </fieldset>
@@ -39,14 +38,19 @@
             <fieldset>
                 <label for="user-email">*Email</label>
                 <input type="email" name="email" id="user-email" placeholder="user@email.com" required>
+            </fieldset>
 
+            <fieldset>
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
             </fieldset>
+
             <fieldset>
                 <label for="user-password">*Password</label>
                 <input type="password" name="user-password" id="password" required>
-                
+            </fieldset>
+
+            <fieldset>
                 <label for="confirm-password">*Confirm Password</label>
                 <input type="password" name="confirm-password" id="confirm-password" required>
             </fieldset>

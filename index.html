@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://falsumit.github.io/normalize.css/normalize.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Odin: Sign-up Form</title>
 </head>
 <body>
-    <fieldset>
-        <legend>Form</legend>
-    </fieldset>
+    <div id="page">
+        <div id="hero"></div>
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>
+                This is not a real contact page! 
+                You know you need something like this in your life to help you realize your deepest dreams. 
+                Sign up now to get started.
+            </p>
+            <p>
+                You know what to do.
+            </p>
+        </div>
+
+        <div id="form">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <label for="first-name">*First Name</label>
+                <input type="text" name="first-name" id="first-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name">
+
+                <label for="user-email">*Email</label>
+                <input type="email" id="user-email" name="email" placeholder="user@email.com" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            </fieldset>
+        </div>
+        <div class="content">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="https://developer.mozilla.org/en-US/" target="_blank">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>

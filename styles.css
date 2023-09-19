@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Haskoy';
+    src: url(./fonts/Haskoy-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haskoy';
+    src: url(./fonts/Haskoy-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Giphurs';
+    src: url(./fonts/Giphurs-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Giphurs';
+    src: url(./fonts/Giphurs-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Haskoy', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: rgb(245, 245, 245);
+}
+
+h1, h2, h3 {
+    font-size: calc(2rem + 1vw);
+    font-weight: bold;
+}
+
+p, legend, label, input, button {
+    font-size: calc(1rem + 0.5vw);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(224, 92, 3);
+}
+
+/* fieldset {
+    border: none;
+    background: yellow;
+    margin: 0;
+} */
+
+button {
+    background: rgb(224, 92, 3);
+    color: rgb(255, 255, 255);
+    padding: 1.1rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.15));
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#page {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#hero {
+    background: url('https://images.unsplash.com/photo-1542361164-6c814a69fdc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.content {
+    margin: 20px;
+}
+
+#form {
+    background: rgb(255, 255, 255);
+    filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.15));
+    padding: 20px;
+    margin: 20px 0;
+}
